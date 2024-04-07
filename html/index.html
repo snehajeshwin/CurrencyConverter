@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- 
+    This HTML document is for a currency converter application that converts between US Dollar (USD) and Canadian Dollar (CAD).
+    It includes a heading section with the title and subtitle, a converter section with input fields for entering amounts,
+    and a result field where the conversion result will be displayed.
+-->
+
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and title of the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Internal style definitions -->
+    <style>
+    /* Styles for headings */
+    h1, h2{
+        color: white;
+    }
+    /* Styles for the heading container */
+    #heading{
+        background-color: navy;
+        text-align: center;
+    }
+    /* Styles for the CAD amount input field */
+    #cadAmount{
+        float: left;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Heading section with main title and subtitle -->
+    <div id="heading">
+        <h1>US Dollar to Canadian Dollar</h1>
+        <h2>Convert USD to CAD at the real exchange rate</h2>
+    </div>
+    
+    <!-- Converter section with input fields and an image indicating conversion direction -->
+    <div id="converter">
+        <input type="number" id="cadAmount" placeholder="Enter CAD amount">
+        <img src="../img/arrow.png" alt="Convert" id="arrowImg" >
+        <input type="number" id="usdAmount" placeholder="Enter USD amount">
+    </div>
+    
+    <!-- Result field section with a button to trigger conversion and a paragraph to display results -->
+    <div id="resultField">
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="result"></p>
+    </div>
+    
+    <!-- Link to external JavaScript file containing the conversion logic -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

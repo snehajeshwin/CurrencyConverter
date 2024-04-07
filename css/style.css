@@ -1,0 +1,69 @@
+/**
+ * Styles for a currency converter application.
+ * 
+ * The body applies a font style that is common across the entire application.
+ */
+   
+ body {
+    font-family: Arial, sans-serif;
+}
+/**The #converter ID styles the main converter container, centering it on the page,
+ * setting its width, and aligning its items in the center. It also adds a bottom margin
+ * to create space between the converter and subsequent elements.
+ */
+
+#converter {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+/** The input[type=number] selector styles the numeric input fields, setting their width,
+ * padding, and margin to ensure they are properly spaced and sized.
+ */
+
+input[type=number] {
+    width: 500px;
+    padding: 10px;
+    margin: 0 10px;
+    
+}
+
+/** The #arrowImg ID styles the image used to indicate the conversion direction, adjusting
+ * its size as needed.
+ */
+#arrowImg {
+    /* Adjust the size as needed */
+    width: 30px;
+    height: auto;
+}
+
+/** The button selector styles the 'Convert' button, adding padding, cursor style, border radius
+ * for an oval shape, background color, text color, and alignment at the end of the flex container.
+ */
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px / 25px;
+    background-color: navy;
+    color: white;
+    align-items: flex-end;
+}
+
+
+/*** The #resultField ID styles the container for the result display and 'Convert' button,
+ * centering it horizontally and adding a top margin to create space from the converter section.
+ */
+ 
+#resultField {
+    margin: 0 auto;
+    width: 100%; /* Ensures the div takes up the full width */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adds space above the convert button section */
+
+}
